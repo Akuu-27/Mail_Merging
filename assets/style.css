@@ -1,0 +1,137 @@
+@import url("https://fonts.googlepis.com.css");
+* {
+  user-select: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: #7c8086;
+  background-image: url("bg1.jpg");
+  width:100%;
+  height:100%;
+}
+header h1 {
+  position: absolute;
+  margin-left: 35%;
+  font-size: 40px;
+  margin-top: 1%;
+  padding: 10px 10px 15px 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px #7ab6c5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.sidebar {
+  top: 0;
+  position: fixed;
+  width: 250px;
+  left: 0;
+  height: 100%;
+  background: #1b1b1b;
+}
+.sidebar .text {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  margin: left 50px;;
+  background: #1e1e1e;
+  letter-spacing: 1px;
+}
+nav ul {
+  background: #1b1b1b;
+  height: 100%;
+  width: 100%;
+  list-style:none;
+}
+nav ul li {
+  line-height: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 35px;
+  font-weight: 600;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+nav ul li a:hover {
+  color: cyan;
+  background: #1e1e1e;
+  border-left-color: cyan;
+}
+.container
+{
+  height: 400px;
+  width: 350px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.envelope
+{
+  background-color: #d74443;
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  right: 350px;
+  top: 170px;
+}
+.paper
+{
+  background-color: white;
+  height: 200px;
+  width: 280px;
+  position: relative;
+  left: 10px;
+}
+.inner1
+{
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid #e15349;
+  border-right: 300px solid transparent;
+  position: relative;
+  bottom: 200px;
+}
+.inner2
+{
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid #e95e55;
+  border-left: 300px solid transparent;
+}
+.cover
+{
+  width: 0;
+  height: 0;
+  border-top: 100px solid #d74443;
+  border-right: 150px solid transparent;
+  border-left: 150px solid transparent;
+  position: relative;
+  bottom: 400px;
+}
+.envelope:hover .cover
+{
+  transform:  rotateX(180deg);
+  z-index: -1;
+}
+.envelope:hover .paper
+{
+  transform: translateY(-50px);
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+ }
